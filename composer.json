@@ -1,0 +1,17 @@
+{
+	"name": "HealthBridge/HB-Config",
+    "version": "0.7.10",
+	"repositories": [],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"require-dev": {},
+	"scripts-dev": {
+		"post-install-cmd": [
+			"vendor/bin/security-checker security:check"
+		],
+		"post-update-cmd": [
+			"vendor/bin/security-checker security:check"
+		]
+	}
+}
