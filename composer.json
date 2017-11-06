@@ -1,7 +1,12 @@
 {
 	"name": "HealthBridge/HB-Config",
     "version": "0.7.10",
-	"repositories": [],
+	"repositories": [
+      {
+        "type": "vcs",
+        "url":  "git@bitbucket.org:valanteam/hb-config.git"
+      }
+    ],
 	"require": {
 		"php": ">=5.4.0"
 	},
