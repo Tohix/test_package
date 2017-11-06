@@ -9,15 +9,15 @@
 // Stripe Payment Gateway Settings
 //========================================================================
 $config_arr['stripe'] = [
-	'secret' => 'sk_test_VRndFqxmMxMCn5ob2vGBWs3x',
-	'publishable' => 'pk_test_AVL4LVmpXhaEtMcn3WfBMjIq'
+	'secret' => $_SERVER['STRIPE_SECRET'],
+	'publishable' => $_SERVER['STRIPE_PUBLISHABLE']
 ];	
 
 //========================================================================
 // USPS Settings
 //========================================================================
-$config_arr["usps"]['user'] = '257SWELL5858';
-$config_arr["usps"]['pass'] = '040YP34CI464';
+$config_arr["usps"]['user'] = $_SERVER['USPS_USER'];
+$config_arr["usps"]['pass'] = $_SERVER['USPS_PASS'];
 
 //========================================================================
 // LWCMS Site ID
